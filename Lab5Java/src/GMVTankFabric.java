@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class GMVTankFabric {
+public class GMVTankFabric extends MilitaryVehicleFabric{
     public GMVTank createVehicle() {
         Random rnd = new Random();
         // Abstract

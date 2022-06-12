@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class MilitaryVehicleFabric {
+public  class MilitaryVehicleFabric {
     public MilitaryVehicle createVehicle(){
 
         Random rnd = new Random();

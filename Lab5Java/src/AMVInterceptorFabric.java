@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class AMVInterceptorFabric {
+public class AMVInterceptorFabric extends MilitaryVehicleFabric{
     public AMVInterceptor createVehicle(){
         Random rnd = new Random();
         // Abstract
