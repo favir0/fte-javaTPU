@@ -4,7 +4,7 @@ public class MilitaryVehicleFabric {
     public MilitaryVehicle createVehicle(){
 
         Random rnd = new Random();
-        int chooseType = rnd.nextInt(0,3);
+        int chooseType = rnd.nextInt(0,4);
         //Preparation phase
         MilitaryVehicle vehicle;
         switch (chooseType) {

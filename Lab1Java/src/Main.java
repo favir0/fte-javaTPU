@@ -46,7 +46,7 @@ public class Main {
         String [] vehicleTypes = {"ZSU", "RSZO", "BTR", "BMP"};
         String vehicleType = vehicleTypes[rnd.nextInt(vehicleTypes.length)];
         int wheelsAmount = rnd.nextInt(10);
-        int chooseType = rnd.nextInt(0,3);
+        int chooseType = rnd.nextInt(0,4);
         AbstractMilitaryVehicle tmp;
         tmp = switch (chooseType) {
             case 0 -> new AMVBomber(crewSize, name, speed, airType, maxFlyHeight, bombAmount, bombPower, hasStealthModule);

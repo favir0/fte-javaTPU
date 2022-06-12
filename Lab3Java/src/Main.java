@@ -46,7 +46,7 @@ public class Main {
         String [] vehicleTypes = {"ZSU", "RSZO", "BTR", "BMP"};
         String vehicleType = vehicleTypes[rnd.nextInt(vehicleTypes.length)];
         int wheelsAmount = rnd.nextInt(10);
-        int chooseType = rnd.nextInt(0,3);
+        int chooseType = rnd.nextInt(0,4);
         //Preparation phase
         MilitaryVehicle tmp;
         tmp = switch (chooseType) {
@@ -56,7 +56,7 @@ public class Main {
             default -> new GMVVehicle(crewSize, name, speed, protectFromBullets, armor, vehicleType, wheelsAmount);
         };
         //Conflict phase
-        chooseType = rnd.nextInt(0,3);
+        chooseType = rnd.nextInt(0,4);
         tmp = switch (chooseType) {
             case 0 -> new DamageStatusDecorator(tmp);
             case 1 -> new UndamagedStatusDecorator(tmp);
